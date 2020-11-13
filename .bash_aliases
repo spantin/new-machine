@@ -18,6 +18,7 @@ alias l='ls -lF'
 alias la='ls -A'
 alias ll='ls -alFh'
 alias das='find . -name \*.sw[p,o,n,m] -type f -exec rm -f {} \;'
+alias cdgr='cd "$(git rev-parse --show-toplevel)"'
 
 
 # git aliases
@@ -40,3 +41,5 @@ alias terror='tail -f ~/pestroutes/log/fatalError.log ~/pestroutes/log/mysql_err
 # debugger aliases
 alias debug='cp ~/PestPortals/.htaccess_profiling ~/PestPortals/.htaccess; cp ~/pestroutes/.htaccess_profiling ~/pestroutes/.htaccess; cp ~/slavedemo/pestroutes/.htaccess_profiling ~/slavedemo/pestroutes/.htaccess'
 alias undebug='(cd ~/PestPortals && git checkout -f .htaccess); (cd ~/slavedemo/pestroutes && git checkout -f .htaccess); (cd ~/pestroutes && git checkout -f .htaccess)'
+
+
